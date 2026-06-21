@@ -1,0 +1,51 @@
+# nuclear-decay-simulation
+Nuclear Decay Chain & Radiation Shielding Simulation
+
+Overview
+
+This project simulates radioactive decay chains and radiation output using a stochastic Monte Carlo approach. It models isotope transformation over time, energy release during decay events, and radiation attenuation through shielding materials.
+
+The goal is to explore how nuclear decay behaves over long time scales and how shielding affects radiation intensity.
+
+Physics Model
+The simulation is based on:
+- Exponential decay law:
+\[N(t) = N_0 e^{-\lambda t}\]
+- Decay constant:
+\[\lambda = \frac{\ln(2)}{t_{1/2}}\]
+- Probabilistic decay (Monte Carlo binomial sampling)
+- Multi-step decay chains (parent → daughter isotopes)
+- Radiation output proportional to decay energy
+- Shielding attenuation:
+\[I = I_0 e^{-\mu x}\]
+
+Isotopes Modeled
+- Cesium-137 (Cs-137)
+- Barium-137m (metastable)
+- Strontium-90 (Sr-90)
+- Yttrium-90 (Y-90)
+- Stable end products (Ba-137, Zr-90)
+
+Features
+- Time-based simulation in real units (days)
+- Stochastic nuclear decay modeling
+- Multi-isotope decay chains
+- Radiation intensity tracking
+- Shielding comparison model
+- Log-scale visualization of exponential decay
+
+Key Visualizations
+- Linear isotope decay curves
+- Log-scale decay plots (linearized exponential behavior)
+- Radiation output over time
+- Shielded vs unshielded radiation comparison
+
+Key Insight
+Radioactive decay follows exponential laws, which appear linear on a logarithmic scale. This simulation demonstrates both representations and highlights the importance of scale selection in nuclear physics analysis.
+
+Future Improvements
+- Incorporate real nuclear data libraries (IAEA datasets)
+- Add neutron interaction modeling
+- Expand to reactor physics simulations
+- Implement uncertainty quantification (multi-run Monte Carlo)
+- Export results to CSV for analysis
